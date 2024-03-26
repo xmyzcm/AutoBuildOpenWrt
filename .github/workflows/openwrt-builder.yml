@@ -105,11 +105,11 @@ jobs:
         
     - name: cache toolchain
       if: env.CACHE_TOOLCHAIN == 'true'
-      uses: HiGarfield/cachewrtbuild@main
+      uses: xmyzcm/cachewrtbuild@main
       with:
         ccache: false
         mixkey: 'xmyzcm'
-        prefix: 'xmyAutoBuildOpenWrt'
+        prefix: 'AutoBuildOpenWrt'
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
