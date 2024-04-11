@@ -6,21 +6,20 @@
 ![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
 ![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
 
-A template for building OpenWrt with GitHub Actions
+一个自动编译openwrt的模板
 
-## Usage
+## 使用方法
 
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
+- 编辑 `.config` 文件，此文件可以通过本地生成，此为openwrt编译时的配置文件
+- 在Actions页里面选择 `Build OpenWrt`
+- 点击 `Run workflow` 按钮.
+- 当编译完成后，会自动上传到release里面供下载
+- 备注:这里面对一些参数和token要注意权限的问题
 
 ## Tips
 
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
+- `.config`在本地生成是有些麻烦的，可以在线搜索解决一些问题。 [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
+
 
 ## Credits
 
